@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>		
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="simple-banner.js"></script>
+	<script>
+		$(function(){
+			$('.simple-banner').rotate({ 'interval': 2000, 'speed': 1000 });
+			$('.banner2').rotate({
+				'interval': 1000,
+				'pause' : true,
+				'speed' : 120
+			});
+		});
+	</script>
+	<style>
+	.banner2 {
+		margin-top: 10px;
+		max-width: 200px; height: 200px;
+	}
+	</style>
+</head>
+<body>
+	<div class='simple-banner'>
+		<a href='http://yahoo.com' target='_blank'><img src='img/banner1.gif'></a>
+		<a href='#'><img src='img/banner2.gif'></a>
+		<a href='#'><img src='img/banner3.gif'></a>
+		<a href='#'><img src='img/banner4.gif'></a>
+		<a href='#'><img src='img/banner5.gif'></a>
+		<a href='#'><img src='img/banner6.gif'></a>
+	</div>
+	
+	 
+	 
+	<div class='banner2'>
+		<a href='#'><img src='img/banner1.gif'></a>
+		<a href='#'><img src='img/banner3.gif'></a>
+		<a href='#'><img src='img/banner5.gif'></a>
+	</div>
+	
+	
+</body>
+</html>
